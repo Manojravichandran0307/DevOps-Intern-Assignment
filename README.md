@@ -3,24 +3,21 @@
 📁 Project Structure
 
 <pre>
-.  
-├── docker-compose.yml  
-├── nginx  
-     ├── nginx.conf  
-     └── Dockerfile  
-├── service_1  
-     ├── Dockerfile  
-     ├── README.md  
-     ├── go.mod  
-     └── main.go  
-├── service_2  
-      ├── Dockerfile  
-      ├── README.md  
-      ├── app.py  
-      ├── requirements.txt  
-      ├── pyproject.toml  
-      └── uv.lock  
-└── README.md (this file)
+.
+nginx-project/
+├── docker-compose.yml
+├── nginx/
+│   ├── Dockerfile
+│   └── nginx.conf
+├── service1/
+│   ├── Dockerfile
+│   └── main.go
+├── service2/
+│   ├── Dockerfile
+│   ├── app.py
+│   └── requirements.txt
+└── README.md
+
 </pre>
 
 🚀 Setup Instructions
