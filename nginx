@@ -1,1 +1,19 @@
+events {}
+
+http {
+    log_format custom '$remote_addr - [$time_local] "$request"';
+    access_log /var/log/nginx/access.log custom;
+
+    server {
+        listen 80;
+
+        location /service1/ {
+            proxy_pass http://service1:8001/;
+        }
+
+        location /service2/ {
+            proxy_pass http://service2:8002/;
+        }
+    }
+}
 
