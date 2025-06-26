@@ -88,3 +88,14 @@ $ curl http://localhost:8080/service2/hello
 $ curl http://localhost:8080/service2/ping
 {"service":"2","status":"ok"}
 </pre>
+
+📝 GitHub Repo Setup:  
+
+Docker Compose Command:
+
+<pre>docker compose -f https://raw.githubusercontent.com/Manojravichandran0307/nginx-project/main/docker-compose.yml up --build</pre>
+
+
+
+
+
