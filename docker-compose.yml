@@ -1,1 +1,32 @@
+version: '3.8'
+
+services:
+  service1:
+    build: ./service_1
+    container_name: service1
+    expose:
+      - "8001"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001"]
+      interval: 10s
+      retries: 3
+
+  service2:
+    build: ./service_2
+    container_name: service2
+    expose:
+      - "8002"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8002"]
+      interval: 10s
+      retries: 3
+
+  nginx:
+    build: ./nginx
+    container_name: nginx_proxy
+    ports:
+      - "8080:80"
+    depends_on:
+      - service1
+      - service2
 
