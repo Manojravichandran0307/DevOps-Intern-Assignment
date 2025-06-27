@@ -23,8 +23,8 @@ nginx-project/
 🚀 Setup Instructions
 1. Clone the Repository
 
-  <pre>git clone https://github.com/Manojravichandran0307/DevOps-Intern-Assignment.git
-cd DevOps-Intern-Assignment</pre>  
+  <pre>git clone https://github.com/Manojravichandran0307/nginx-project.git
+cd nginx-project</pre>  
    
 2. Build and Run the Application   
 
